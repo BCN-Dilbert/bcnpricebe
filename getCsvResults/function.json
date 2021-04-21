@@ -1,0 +1,26 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "route": "getCsvResults/{csvfile}"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "table",
+      "name": "inTable",
+      "tableName": "bcnpricebatch",
+      "connection": "bcnprice_sa_table_batch",
+      "direction": "in",
+      "partitionKey": "{csvfile}",
+      "take": 1000000000
+    }
+  ],
+  "disabled": false
+}

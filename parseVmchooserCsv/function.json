@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "type": "blobTrigger",
+      "name": "myBlob",
+      "path": "input/{name}",
+      "connection": "bcnprice_sa_blob_input",
+      "direction": "in"
+    },
+    {
+      "type": "blob",
+      "name": "outputBlob",
+      "path": "output/{name}",
+      "connection": "bcnprice_sa_blob_input",
+      "direction": "out"
+    }
+  ],
+  "disabled": true
+}

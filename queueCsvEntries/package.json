@@ -1,0 +1,11 @@
+{
+  "name": "queueCsvEntries",
+  "description": "Inject CSV entries to be parsed by bcnprice into a queue",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "fs": "*",
+    "csv-parse": "*",
+    "azure-storage": "*"
+  }
+}

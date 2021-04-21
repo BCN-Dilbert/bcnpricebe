@@ -1,0 +1,493 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "bcnprice.azurewebsites.net",
+    "version": "1.0.0"
+  },
+  "host": "bcnprice.azurewebsites.net",
+  "basePath": "/",
+  "schemes": [
+    "https",
+    "http"
+  ],
+  "paths": {
+    "/api/getCsvResults/{csvfile}": {
+      "get": {
+        "operationId": "/api/getCsvResults/{csvfile}/get",
+        "produces": [],
+        "consumes": [],
+        "parameters": [
+          {
+            "name": "csvfile",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "description": "Replace with Operation Object #http://swagger.io/specification/#operationObject",
+        "responses": {
+          "200": {
+            "description": "Success operation"
+          }
+        },
+        "security": [
+          {
+            "apikeyQuery": []
+          }
+        ]
+      },
+      "post": {
+        "operationId": "/api/getCsvResults/{csvfile}/post",
+        "produces": [],
+        "consumes": [],
+        "parameters": [
+          {
+            "name": "csvfile",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "description": "Replace with Operation Object #http://swagger.io/specification/#operationObject",
+        "responses": {
+          "200": {
+            "description": "Success operation"
+          }
+        },
+        "security": [
+          {
+            "apikeyQuery": []
+          }
+        ]
+      },
+      "delete": {
+        "operationId": "/api/getCsvResults/{csvfile}/delete",
+        "produces": [],
+        "consumes": [],
+        "parameters": [
+          {
+            "name": "csvfile",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "description": "Replace with Operation Object #http://swagger.io/specification/#operationObject",
+        "responses": {
+          "200": {
+            "description": "Success operation"
+          }
+        },
+        "security": [
+          {
+            "apikeyQuery": []
+          }
+        ]
+      },
+      "head": {
+        "operationId": "/api/getCsvResults/{csvfile}/head",
+        "produces": [],
+        "consumes": [],
+        "parameters": [
+          {
+            "name": "csvfile",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "description": "Replace with Operation Object #http://swagger.io/specification/#operationObject",
+        "responses": {
+          "200": {
+            "description": "Success operation"
+          }
+        },
+        "security": [
+          {
+            "apikeyQuery": []
+          }
+        ]
+      },
+      "patch": {
+        "operationId": "/api/getCsvResults/{csvfile}/patch",
+        "produces": [],
+        "consumes": [],
+        "parameters": [
+          {
+            "name": "csvfile",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "description": "Replace with Operation Object #http://swagger.io/specification/#operationObject",
+        "responses": {
+          "200": {
+            "description": "Success operation"
+          }
+        },
+        "security": [
+          {
+            "apikeyQuery": []
+          }
+        ]
+      },
+      "put": {
+        "operationId": "/api/getCsvResults/{csvfile}/put",
+        "produces": [],
+        "consumes": [],
+        "parameters": [
+          {
+            "name": "csvfile",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "description": "Replace with Operation Object #http://swagger.io/specification/#operationObject",
+        "responses": {
+          "200": {
+            "description": "Success operation"
+          }
+        },
+        "security": [
+          {
+            "apikeyQuery": []
+          }
+        ]
+      },
+      "options": {
+        "operationId": "/api/getCsvResults/{csvfile}/options",
+        "produces": [],
+        "consumes": [],
+        "parameters": [
+          {
+            "name": "csvfile",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "description": "Replace with Operation Object #http://swagger.io/specification/#operationObject",
+        "responses": {
+          "200": {
+            "description": "Success operation"
+          }
+        },
+        "security": [
+          {
+            "apikeyQuery": []
+          }
+        ]
+      }
+    },
+    "/api/getDetail": {
+      "post": {
+        "operationId": "/api/getDetail/post",
+        "produces": [],
+        "consumes": [],
+        "parameters": [],
+        "description": "Replace with Operation Object #http://swagger.io/specification/#operationObject",
+        "responses": {
+          "200": {
+            "description": "Success operation"
+          }
+        },
+        "security": [
+          {
+            "apikeyQuery": []
+          }
+        ]
+      }
+    },
+    "/api/getDiskSize": {
+      "post": {
+        "operationId": "/api/getDiskSize/post",
+        "produces": [],
+        "consumes": [],
+        "parameters": [],
+        "description": "Replace with Operation Object #http://swagger.io/specification/#operationObject",
+        "responses": {
+          "200": {
+            "description": "Success operation"
+          }
+        },
+        "security": [
+          {
+            "apikeyQuery": []
+          }
+        ]
+      }
+    },
+    "/api/getVmSize": {
+      "get": {
+        "operationId": "/api/getVmSize/get",
+        "produces": [],
+        "consumes": [],
+        "parameters": [
+          {
+            "name": "currency",
+            "in": "query",
+            "description": "The currency used for the pricing",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "contract",
+            "in": "query",
+            "description": "The contract used for the pricing",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "region",
+            "in": "query",
+            "description": "The Azure region",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "tier",
+            "in": "query",
+            "description": "VM Tier",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "acu",
+            "in": "query",
+            "description": "Minimum ACU value",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "ht",
+            "in": "query",
+            "description": "Hyper-Threaded Core (yes / no)",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "cores",
+            "in": "query",
+            "description": "Minimum number of cores",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pcores",
+            "in": "query",
+            "description": "Minimum number of pCores",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "memory",
+            "in": "query",
+            "description": "Minimum amount of memory",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "iops",
+            "in": "query",
+            "description": "Minimum iops for the data disk(s)",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "data",
+            "in": "query",
+            "description": "Minimum capacity (in GB) for the data disk(s)",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "temp",
+            "in": "query",
+            "description": "Minimum capacity (in GB) for the temp disk",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "throughput",
+            "in": "query",
+            "description": "Minimum throughput (in MB) for the data disk(s)",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "nics",
+            "in": "query",
+            "description": "Minimum amount of nics",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "ssd",
+            "in": "query",
+            "description": "SSD Capable (yes / no)",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "burstable",
+            "in": "query",
+            "description": "Burstable (yes / no)",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "isolated",
+            "in": "query",
+            "description": "Isolated (yes / no)",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "maxresults",
+            "in": "query",
+            "description": "The amount of results that will be returned",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "avgcpupeak",
+            "in": "query",
+            "description": "The 95pct of cpu usage, used for rightsizing [1-100]",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "avgmempeak",
+            "in": "query",
+            "description": "The 95pct of memory usage, used for rightsizing [1-100]",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "description": "Replace with Operation Object #http://swagger.io/specification/#operationObject",
+        "responses": {
+          "200": {
+            "description": "Success operation"
+          }
+        },
+        "security": [
+          {
+            "apikeyQuery": []
+          }
+        ]
+      },
+      "post": {
+        "operationId": "/api/getVmSize/post",
+        "produces": [],
+        "consumes": [],
+        "parameters": [],
+        "description": "Replace with Operation Object #http://swagger.io/specification/#operationObject",
+        "responses": {
+          "200": {
+            "description": "Success operation"
+          }
+        },
+        "security": [
+          {
+            "apikeyQuery": []
+          }
+        ]
+      },
+      "delete": {
+        "operationId": "/api/getVmSize/delete",
+        "produces": [],
+        "consumes": [],
+        "parameters": [],
+        "description": "Replace with Operation Object #http://swagger.io/specification/#operationObject",
+        "responses": {
+          "200": {
+            "description": "Success operation"
+          }
+        },
+        "security": [
+          {
+            "apikeyQuery": []
+          }
+        ]
+      },
+      "head": {
+        "operationId": "/api/getVmSize/head",
+        "produces": [],
+        "consumes": [],
+        "parameters": [],
+        "description": "Replace with Operation Object #http://swagger.io/specification/#operationObject",
+        "responses": {
+          "200": {
+            "description": "Success operation"
+          }
+        },
+        "security": [
+          {
+            "apikeyQuery": []
+          }
+        ]
+      },
+      "patch": {
+        "operationId": "/api/getVmSize/patch",
+        "produces": [],
+        "consumes": [],
+        "parameters": [],
+        "description": "Replace with Operation Object #http://swagger.io/specification/#operationObject",
+        "responses": {
+          "200": {
+            "description": "Success operation"
+          }
+        },
+        "security": [
+          {
+            "apikeyQuery": []
+          }
+        ]
+      },
+      "put": {
+        "operationId": "/api/getVmSize/put",
+        "produces": [],
+        "consumes": [],
+        "parameters": [],
+        "description": "Replace with Operation Object #http://swagger.io/specification/#operationObject",
+        "responses": {
+          "200": {
+            "description": "Success operation"
+          }
+        },
+        "security": [
+          {
+            "apikeyQuery": []
+          }
+        ]
+      },
+      "options": {
+        "operationId": "/api/getVmSize/options",
+        "produces": [],
+        "consumes": [],
+        "parameters": [],
+        "description": "Replace with Operation Object #http://swagger.io/specification/#operationObject",
+        "responses": {
+          "200": {
+            "description": "Success operation"
+          }
+        },
+        "security": [
+          {
+            "apikeyQuery": []
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {},
+  "securityDefinitions": {
+    "apikeyQuery": {
+      "type": "apiKey",
+      "name": "code",
+      "in": "query"
+    }
+  }
+}

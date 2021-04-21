@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "name": "myBlob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "input/{name}",
+      "connection": "bcnprice_sa_blob_input"
+    },
+    {
+      "type": "queue",
+      "name": "outputQueueItem",
+      "queueName": "bcnpricebatch",
+      "connection": "bcnprice_sa_queue_batch",
+      "direction": "out"
+    }
+  ],
+  "disabled": true
+}

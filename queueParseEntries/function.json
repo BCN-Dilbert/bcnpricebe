@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "name": "inputMessage",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "bcnpricebatch",
+      "connection": "bcnprice_sa_queue_batch"
+    },
+    {
+      "type": "table",
+      "name": "outTable",
+      "tableName": "bcnpricebatch",
+      "connection": "bcnprice_sa_table_batch",
+      "direction": "out"
+    }
+  ],
+  "disabled": true
+}
